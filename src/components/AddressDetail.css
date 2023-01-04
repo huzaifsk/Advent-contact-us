@@ -1,0 +1,134 @@
+.location {
+    background-image: url("./assets/location.png");
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+.card-item {
+    padding-top: 15px;
+    padding-left: 5px;
+}
+
+.card-design {
+    border: 0.1px #000;
+    background-color: ghostwhite;
+    box-shadow: 10px 10px 5px black;
+}
+
+.company-picture {
+    position: absolute;
+    right: 60vh;
+    top: 335vh;
+    z-index: -1;
+    width: 25vw;
+    height: 40vh;
+
+}
+
+.alignment {
+    margin-top: 5vh;
+    margin-left: 20vh;
+}
+
+.wrapper {
+    padding: 30px 30px 300px;
+    align-items: center;
+}
+
+.columns {
+    margin: 0 -15px;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.alignment-col-2 {
+    margin-bottom: 1vh;
+    margin-left: 20vh;
+}
+
+.col {
+    margin: 0 15px 30px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.alignment-card {
+    margin-top: 10%;
+}
+
+@media only screen and (max-width: 600px) {
+    .company-picture {
+        position: absolute;
+        height: 30vh;
+        z-index: -1;
+        left: 5vh;
+        top: 385vh;
+        width: 30vh;
+    }
+
+    .location {
+        background-image: url("./assets/location1.png");
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-bottom: 50vh;
+    }
+
+    /* .alignment-col-2 {
+        margin-bottom: 1vh;
+    }
+
+    .alignment-card {
+        margin-top: 5vh;
+    } */
+
+    .alignment-col-2,
+    .alignment {
+        margin-left: 0%;
+        margin-top: 5%;
+    }
+}
+
+.message {
+    width: 100%;
+    position: relative;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.message .success {
+    font-size: 20px;
+    color: green;
+    position: absolute;
+    animation: buttons .3s linear;
+    display: none;
+}
+
+.message .danger {
+    font-size: 20px;
+    color: red;
+    position: absolute;
+    transition: .3s;
+    animation: buttons .3s linear;
+    display: none;
+}
+
+@keyframes buttons {
+    0% {
+        transform: scale(0.1);
+    }
+
+    50% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
